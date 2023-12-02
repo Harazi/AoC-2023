@@ -43,7 +43,7 @@ int main(void)
 						limit = 14;
 					break;
 					default:
-						fprintf(stderr, "Unknown cube color: %s", sets[i]);
+						fprintf(stderr, "Game %s: Unknown cube color: %s", gameID, sets[i]);
 						return EXIT_FAILURE;
 				}
 				if (count > limit) {
