@@ -21,10 +21,7 @@ int main(int argc, char *argv[])
 	char *line = NULL;
 	size_t sum = 0;
 	int winningnumbers[128];
-	int numbersinhand[128];
 	while(getline(&line, &linessize, input) != -1) {
-		memset(winningnumbers, 0, sizeof(int) * 128);
-		memset(numbersinhand, 0, sizeof(int) * 128);
 
 		int score = 0;
 		char *str = strchr(line, ':');
